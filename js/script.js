@@ -96,7 +96,7 @@ if(formCadastro) {
 
         mostrarMensagem("Cadastro realizado com sucesso! Redirecionando...", "bg-success");
 
-        // Espera 2 segundos e manda pra tela de login
+        // Espera 2 segundos e manda para a tela de login
         setTimeout(() => {
             window.location.href = 'login.html';
         }, 2000);
