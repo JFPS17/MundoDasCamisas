@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Camisas - Página Inicial</title>
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Menu superior -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="index.html">Mundo das Camisas</a>
+        <div>
+            <button class="btn btn-sm btn-outline-light me-2" onclick="mudarFonte(1)">A+</button>
+            <button class="btn btn-sm btn-outline-light me-2" onclick="mudarFonte(-1)">A-</button>
+            <button class="btn btn-sm btn-outline-warning" onclick="toggleContraste()">🌗 Contraste</button>
+        </div>
+    </div>
+
+    <!-- Elemento para o Toast (Feedback sem usar alert) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="meuToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMensagem">
+                    Mensagem de erro aqui.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Grid de Camisas -->
+<div class="row">
+    <div class="col-md-3 col-6">
+        <div class="card">
+            <img src="img/camisa-brasil.jpg" class="card-img-top" alt="Camisa do Brasil">
+            <div class="card-body text-center">
+                <h6 class="card-title">Camisa Seleção Brasileira 24/25</h6>
+                <p class="text-success fw-bold">R$ 159,90</p>
+                <button class="btn btn-primary btn-sm">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
